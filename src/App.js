@@ -1,15 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import ChartView from './components/ChartView';
+import DataVisualApp from './components/DataVisualApp';
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <div style={{width: '600px', height:'300px'}}>
-        <ChartView />
-        </div>
-      </header>
+      <div className="App-header">
+        <div className="title">Lab Forward</div>
+        <DataVisualApp />
+      </div>
     </div>
   );
 }

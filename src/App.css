@@ -9,14 +9,67 @@
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.recharts-cartesian-axis-ticks{
+  font-size: small
+}
+
+.button{
+  background: whitesmoke;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0 10px;
+  font-weight: normal;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  font-size: 20px;
+    color: gray;
+}
+
+.button:disabled:hover{
+  cursor: default;
+  color: darkgray
+}
+
+.button:hover{
+    background:#80808038;
+}
+
+.buttonContainer{
+  display: flex;
+    justify-content: space-evenly;
+    width: 65%;
+    margin: 0 auto;
 }
 
 .App-link {
   color: #09d3ac;
 }
+
+.chartContainer{
+  width: 50%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.title{
+  font-size: 40px;
+  font-weight: bold;
+  color: #09d3ac;
+}
+/* 
+.recharts-surface{
+    border: 1px solid;
+    border-radius: 5px;
+} */
