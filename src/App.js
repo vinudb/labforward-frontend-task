@@ -1,23 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import ChartView from './components/ChartView';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div style={{width: '600px', height:'300px'}}>
+        <ChartView />
+        </div>
       </header>
     </div>
   );
