@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
 } from 'recharts';
@@ -9,8 +9,8 @@ export default class ChartView extends React.Component {
   render() {
     return (
         <ResponsiveContainer
-        width="100%"
-      >
+        data-test="chartViewComponent"    
+        width="100%">
         <LineChart
             data={this.props.dataSet}
             margin={{top: 5, right: 0, left: 0, bottom: 0}}>
@@ -29,10 +29,11 @@ export default class ChartView extends React.Component {
             stroke="#ebf3f0"
           />
           <Tooltip />
-          <Legend payload = {[{ value: this.props.dataSetName, type: 'line', id: 'ID01' }]}/>
-          <Line dataKey={`series_${this.props.series}`} stroke="#82ca9d"  dot={true} />
+          <Legend payload = {[{ value: this.props.dataSetName, type: 'line' }]}/>
+          <Line dataKey={`series_${this.props.series}`} stroke="#09d3ac"  dot={true} />
         </LineChart>
       </ResponsiveContainer>
     );
   }
 }
+

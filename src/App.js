@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import DataVisualApp from './components/DataVisualApp';
 
-function App() {
+const App = ()=>{
   return (
     <div className="App">
       <div className="App-header">
