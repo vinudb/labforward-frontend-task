@@ -32,7 +32,7 @@
 }
 
 .button:disabled:hover{
-  cursor: default;
+  cursor: not-allowed;
   color: darkgray
 }
 
