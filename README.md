@@ -1,5 +1,3 @@
-# LIVE URL : https://lab-forward-frontend-task.herokuapp.com/
-
 # To view the output in the development mode, follow the steps as given below:
 1) In the console, navigate to the project folder.
 2) Run command "npm install". This will install all the dependencies and creates a node-modules folder.
@@ -15,6 +13,3 @@
 - Have used json-server mock Rest API endpoint with array of 3 series of data.
 - fetchData function in the utils folder fetches the data and computes the signal array based on the threhold value set. 
 - Complete test coverage using jest and enzyme
-
-# NOTE: 
-- Since the number of components are very less and there are no complext data set invloved, no state containers like redux, context-api are used. 
